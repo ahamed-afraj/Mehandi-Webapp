@@ -1,0 +1,141 @@
+nav {
+  width: 100%;
+  /* background: #ffffff; */
+  color: white;
+  max-width: 1400px;
+  padding: 40x 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.logo {
+  margin-left: 12px;
+  width: 100px;
+  height: 80px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Underline effect using ::after */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Position the underline slightly below the text */
+  width: 0;
+  height: 2px;
+  background-color: white; /* Underline color */
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Active link underline (keeps the underline for the active link) */
+nav ul li a.active::after {
+  width: 100%;
+}
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.menu-icon {
+  display: none;
+}
+.hide-close-menu {
+  display: none;
+}
+@media (min-width: 1300px) {
+  .logo {
+    width: 140px;
+    height: 120px;
+  }
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    padding-left: 4%;
+    padding-right: 5%;
+  }
+  .logo {
+    width: 60px;
+    height: 50px;
+  }
+  nav ul li {
+    margin: 10px 15px;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  /* Active link underline (keeps the underline for the active link) */
+  nav ul li a.active::after {
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  nav {
+    padding: 15px 0;
+    margin-right: 0px;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    z-index: -1;
+    width: 200px;
+    padding-top: 70px;
+    transition: 0.5s;
+    background: rgba(5, 15, 5);
+    bottom: 0;
+    color: rgb(255, 255, 255);
+  }
+  nav ul li {
+    display: block;
+    margin: 25px 40px;
+  }
+  .menu-icon {
+    display: block;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .hide-close-menu {
+    display: none;
+  }
+  .hide-mobile-menu {
+    right: -200px;
+  }
+}
