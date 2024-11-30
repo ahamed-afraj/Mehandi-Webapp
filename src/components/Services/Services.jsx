@@ -13,6 +13,7 @@ const Services = () => {
         <div className="image-box">
           <img src={bridal_henna} />
           <center>
+            <h2 className="service-title">Bridal Henna</h2>
             <Button
               style={{ marginTop: 20 }}
               offset={-210}
@@ -23,7 +24,6 @@ const Services = () => {
           </center>
         </div>
         <div className="content">
-          <h2>Bridal Henna</h2>
           <p>
             Bridal henna is a beautiful tradition symbolizing love, joy, and
             blessings. Intricate designs adorn the bride’s hands and feet,
@@ -35,6 +35,12 @@ const Services = () => {
         <div className="image-box">
           <img src={bridesmaid} />
           <center>
+            <h2
+              style={{ fontFamily: "Times New Roman" }}
+              className="service-title"
+            >
+              Bridedmaid Henna
+            </h2>
             <Button
               style={{ marginTop: 20 }}
               offset={-210}
@@ -45,7 +51,6 @@ const Services = () => {
           </center>
         </div>
         <div className="content">
-          <h2>Bridesmaid Henna</h2>
           <p>
             Bridesmaid henna adds charm to wedding celebrations, with elegant
             designs that complement the bridal theme and celebrate friendship
@@ -57,6 +62,12 @@ const Services = () => {
         <div className="image-box">
           <img src={babyshower_henna} />
           <center>
+            <h2
+              style={{ fontFamily: "Times New Roman" }}
+              className="service-title"
+            >
+              Baby Shower Henna
+            </h2>
             <Button
               style={{ marginTop: 20 }}
               offset={-210}
@@ -67,7 +78,6 @@ const Services = () => {
           </center>
         </div>
         <div className="content">
-          <h2>Baby Shower Henna</h2>
           <p>
             Baby shower henna celebrates the mother-to-be with delicate,
             meaningful designs, symbolizing love, blessings, and the joy of new
@@ -79,6 +89,12 @@ const Services = () => {
         <div className="image-box">
           <img src={guest_henna} />
           <center>
+            <h2
+              style={{ fontFamily: "Times New Roman" }}
+              className="service-title"
+            >
+              Guest Henna
+            </h2>
             <Button
               style={{ marginTop: 20 }}
               offset={-210}
@@ -89,7 +105,6 @@ const Services = () => {
           </center>
         </div>
         <div className="content">
-          <h2>Guest Henna</h2>
           <p>
             Guest henna brings everyone together with beautiful, quick designs,
             letting every attendee feel included in the celebration of love and

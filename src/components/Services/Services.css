@@ -62,7 +62,10 @@
   opacity: 1;
   inset: 20px;
 }
-
+.card:active img {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
 .content {
   width: 80%;
   position: absolute;
@@ -71,7 +74,11 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
+.service-title {
+  margin-top: 10px;
+  color: rgb(30, 107, 30);
+  margin-bottom: -10px;
+}
 .content h2,
 .content p {
   color: #ffffff;
@@ -100,6 +107,12 @@
   .services {
     font-size: 30px;
     margin-bottom: 10px;
+  }
+  .service-title {
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(30, 107, 30);
+    margin-bottom: -10px;
   }
   .content h2 {
     font-size: 24px;
