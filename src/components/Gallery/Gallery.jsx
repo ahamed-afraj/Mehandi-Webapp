@@ -29,11 +29,34 @@ import henna18 from "../../assets/gallery/henna18.jpg";
 import henna19 from "../../assets/gallery/henna19.jpg";
 import henna20 from "../../assets/gallery/henna20.jpg";
 
+const images = [
+  { src: bridal_henna1, alt: "Bridal Henna 1" },
+  { src: bridal_henna2, alt: "Henna 2" },
+  { src: henna3, alt: "Henna 3" },
+  { src: henna4, alt: "Henna 4" },
+  { src: henna5, alt: "Henna 5" },
+  { src: henna6, alt: "Henna 6" },
+  { src: henna7, alt: "Henna 7" },
+  { src: henna8, alt: "Henna 8" },
+  { src: henna9, alt: "Henna 9" },
+  { src: henna10, alt: "Henna 10" },
+  { src: henna11, alt: "Henna 11" },
+  { src: henna12, alt: "Henna 12" },
+  { src: henna13, alt: "Henna 13" },
+  { src: henna14, alt: "Henna 14" },
+  { src: henna15, alt: "Henna 15" },
+  { src: henna16, alt: "Henna 16" },
+  { src: henna17, alt: "Henna 17" },
+  { src: henna18, alt: "Henna 18" },
+  { src: henna19, alt: "Henna 19" },
+  { src: henna20, alt: "Henna 20" },
+];
+
 function App() {
   return (
     <div id="gallery" className="containerr">
       <p className="gallery-title">Gallery</p>
-      <h2 className="heading"> Admire the Beauty of Henna Artistry</h2>
+      <h2 className="heading">Admire the Beauty of Henna Artistry</h2>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -59,67 +82,11 @@ function App() {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
-        <SwiperSlide>
-          <img src={bridal_henna1} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={bridal_henna2} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna3} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna4} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna5} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna6} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna7} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna8} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna9} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna10} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna11} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna12} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna13} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna14} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna15} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna16} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna17} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna18} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna19} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={henna20} alt="slide_image" />
-        </SwiperSlide>
-
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img src={image.src} alt={image.alt} />
+          </SwiperSlide>
+        ))}
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>

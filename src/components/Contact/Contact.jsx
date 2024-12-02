@@ -45,7 +45,7 @@ const Contact = () => {
           Feel free to reach out to us through the contact form below or connect
           with us directly using the contact details provided. Whether you have
           questions, need a quote, or want to book a session, we’re here to
-          help! Let’s work together to bring your dream Mehndi designs to life.
+          help. Let’s work together to bring your dream Mehndi designs to life.
           We look forward to hearing from you!
         </p>
         <ul>
